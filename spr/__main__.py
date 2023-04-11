@@ -45,14 +45,14 @@ async def main():
 @spr.on_message(filters.command(["help", "start"]), group=2)
 async def help_command(_, message: Message):
     if message.chat.type != "private":
-        kb = ikb({"Help": f"https://t.me/{BOT_USERNAME}?start=help"})
+        kb = ikb({"Help": f"https://t.me/Tiktok_nakamabot?start=help"})
         return await message.reply("Pm Me For Help", reply_markup=kb)
     kb = ikb(
         {
             "Help": "bot_commands",
-            "Repo": "https://github.com/TheHamkerCat/SpamProtectionRobot",
-            "Add Me To Your Group": f"https://t.me/{BOT_USERNAME}?startgroup=new",
-            "Support Chat (for now)": "https://t.me/WBBSupport",
+            "Repo": "https://github.com/virtualunionsex/SpamProtectionRobot",
+            "Add Me To Your Group": f"https://t.me/Tiktok_nakamabot?startgroup=new",
+            "Support Chat (for now)": "https://t.me/nakama_asl",
         }
     )
     mention = message.from_user.mention
